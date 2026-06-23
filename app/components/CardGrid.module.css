@@ -1,0 +1,19 @@
+/* .grid {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-row: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem auto 0 auto;
+  
+} */
+
+.grid {
+  display: grid;
+  /* This forces exactly 4 side-by-side columns on desktop screens */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
